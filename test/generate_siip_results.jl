@@ -107,7 +107,7 @@ set_service_model!(template_uc, VariableReserve{ReserveDown}, RangeReserve)
 set_transmission_model!(template_uc, CopperPlatePowerModel)
 
 # Optimizer
-solver = optimizer_with_attributes(SCIP.Optimizer,"limits/gap" => 1e-3,"limits/time" => 100,)
+solver = optimizer_with_attributes(SCIP.Optimizer,"limits/gap" => 1e-4,"limits/time" => 300,)
 
 # Build the Operations Problem
 op_problem = OperationsProblem(template_uc, sys_DA; optimizer = solver, horizon = 24,initial_time = DateTime("2020-07-01T00:00:00"))
