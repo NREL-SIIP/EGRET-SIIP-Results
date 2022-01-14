@@ -1,0 +1,18 @@
+┌ Info: 2022-01-14T09:34:34.999 [562:1]: Building problem 1-UC
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/simulation.jl:549
+┌ Info: 2022-01-14T09:34:36.011 [562:1]: Initializing Optimization Container
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/operations_problem.jl:447
+┌ Info: 2022-01-14T09:34:36.184 [562:1]: Unit System changed to UnitSystem.SYSTEM_BASE = 0
+└ @ PowerSystems /Users/cbarrows/.julia/packages/PowerSystems/TNddf/src/base.jl:346
+┌ Warning: 2022-01-14T09:34:43.987 [562:1]: Data doesn't contain generators with ramp limits, consider adjusting your formulation
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/devices_models/devices/thermal_generation.jl:703
+┌ Info: 2022-01-14T09:34:53.566 [562:1]: Serialized time series data to /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/1/problems/system-ed816ff2-2b01-4404-96bf-67433abb1d96_time_series_storage.h5.
+└ @ InfrastructureSystems /Users/cbarrows/.julia/packages/InfrastructureSystems/uK9eo/src/time_series_storage.jl:99
+┌ Info: 2022-01-14T09:34:55.110 [562:1]: Serialized System to /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/1/problems/system-ed816ff2-2b01-4404-96bf-67433abb1d96.json
+└ @ PowerSystems /Users/cbarrows/.julia/packages/PowerSystems/TNddf/src/base.jl:274
+┌ Info: 2022-01-14T09:34:55.527 [562:1]: Serialized OperationsProblem to
+│   bin_file_name = /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/1/problems/UC.bin
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/operations_problem.jl:572
+┌ Info: 2022-01-14T09:35:07.180 [562:1]: Serialized simulation name = RTS-GMLC
+│   directory = /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/1/simulation_files
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/simulation.jl:1356

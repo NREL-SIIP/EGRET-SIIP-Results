@@ -1,0 +1,112 @@
+┌ Info: 2022-01-14T09:43:31.561 [3459:1]: Building problem 1-UC
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/simulation.jl:549
+┌ Info: 2022-01-14T09:43:31.562 [3459:1]: Initializing Optimization Container
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/operations_problem.jl:447
+┌ Warning: 2022-01-14T09:43:32.146 [3459:1]: Data doesn't contain generators with ramp limits, consider adjusting your formulation
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/devices_models/devices/thermal_generation.jl:703
+┌ Warning: 2022-01-14T09:43:44.964 [3459:1]: The data doesn't include devices of type Transformer2W, consider changing the device models
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/devices_models/device_constructors/common/constructor_validations.jl:3
+┌ Info: 2022-01-14T09:43:45.011 [3459:1]: Serialized time series data to /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/3/problems/system-6b9e9a59-a65c-433b-81ed-12cf600854b7_time_series_storage.h5.
+└ @ InfrastructureSystems /Users/cbarrows/.julia/packages/InfrastructureSystems/uK9eo/src/time_series_storage.jl:99
+┌ Info: 2022-01-14T09:43:45.253 [3459:1]: Serialized System to /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/3/problems/system-6b9e9a59-a65c-433b-81ed-12cf600854b7.json
+└ @ PowerSystems /Users/cbarrows/.julia/packages/PowerSystems/TNddf/src/base.jl:274
+┌ Info: 2022-01-14T09:43:45.253 [3459:1]: Serialized OperationsProblem to
+│   bin_file_name = /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/3/problems/UC.bin
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/operations_problem.jl:572
+┌ Info: 2022-01-14T09:43:48.180 [3459:1]: Serialized simulation name = RTS-GMLC
+│   directory = /Users/cbarrows/Documents/repos/EGRET-SIIP-Results/data/Results/RTS-GMLC/3/simulation_files
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/simulation.jl:1356
+┌ Info: 2022-01-14T09:44:32.603 [3459:1]: 
+│  ──────────────────────────────────────────────────────────────────────────────
+│                                        Time                   Allocations      
+│                                ──────────────────────   ───────────────────────
+│        Tot / % measured:            44.4s / 100%            3.21GiB / 100%     
+│ 
+│  Section               ncalls     time   %tot     avg     alloc   %tot      avg
+│  ──────────────────────────────────────────────────────────────────────────────
+│  Execute Simulation         1    44.4s   100%   44.4s   3.21GiB  100%   3.21GiB
+│    Execution Step 1         1    4.40s  9.91%   4.40s    373MiB  11.3%   373MiB
+│      Execute UC             1    4.40s  9.91%   4.40s    373MiB  11.3%   373MiB
+│        Run UC               1    4.14s  9.33%   4.14s    248MiB  7.55%   248MiB
+│        Update Cache 1       1   11.0ms  0.02%  11.0ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1    643ns  0.00%   643ns     0.00B  0.00%    0.00B
+│    Execution Step 9         1    4.08s  9.20%   4.08s    223MiB  6.77%   223MiB
+│      Execute UC             1    4.08s  9.20%   4.08s    223MiB  6.77%   223MiB
+│        Run UC               1    3.79s  8.53%   3.79s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.0ms  0.02%  11.0ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.45ms  0.01%  3.45ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.74ms  0.01%   547μs   3.01MiB  0.09%   617KiB
+│    Execution Step 13        1    3.83s  8.64%   3.83s    223MiB  6.77%   223MiB
+│      Execute UC             1    3.83s  8.64%   3.83s    223MiB  6.77%   223MiB
+│        Run UC               1    3.53s  7.95%   3.53s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.2ms  0.03%  11.2ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.86ms  0.01%  3.86ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   3.08ms  0.01%   615μs   3.01MiB  0.09%   617KiB
+│    Execution Step 8         1    3.72s  8.38%   3.72s    223MiB  6.77%   223MiB
+│      Execute UC             1    3.72s  8.38%   3.72s    223MiB  6.77%   223MiB
+│        Run UC               1    3.41s  7.69%   3.41s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.3ms  0.03%  11.3ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   6.16ms  0.01%  6.16ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   5.15ms  0.01%  1.03ms   3.01MiB  0.09%   617KiB
+│    Execution Step 12        1    3.62s  8.15%   3.62s    223MiB  6.77%   223MiB
+│      Execute UC             1    3.62s  8.15%   3.62s    223MiB  6.77%   223MiB
+│        Run UC               1    3.29s  7.42%   3.29s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.9ms  0.03%  11.9ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.28ms  0.01%  3.28ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.60ms  0.01%   521μs   3.01MiB  0.09%   617KiB
+│    Execution Step 11        1    3.36s  7.57%   3.36s    223MiB  6.77%   223MiB
+│      Execute UC             1    3.36s  7.56%   3.36s    223MiB  6.77%   223MiB
+│        Run UC               1    3.11s  7.00%   3.11s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   10.8ms  0.02%  10.8ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.49ms  0.01%  3.49ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.62ms  0.01%   524μs   3.01MiB  0.09%   617KiB
+│    Execution Step 5         1    3.14s  7.07%   3.14s    223MiB  6.77%   223MiB
+│      Execute UC             1    3.14s  7.07%   3.14s    223MiB  6.77%   223MiB
+│        Run UC               1    2.84s  6.40%   2.84s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.7ms  0.03%  11.7ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.39ms  0.01%  3.39ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.72ms  0.01%   543μs   3.01MiB  0.09%   617KiB
+│    Execution Step 2         1    2.85s  6.42%   2.85s    244MiB  7.42%   244MiB
+│      Execute UC             1    2.85s  6.42%   2.85s    244MiB  7.42%   244MiB
+│        Run UC               1    2.26s  5.10%   2.26s    100MiB  3.03%   100MiB
+│        Update UC            1    324ms  0.73%   324ms   24.3MiB  0.74%  24.3MiB
+│          ts_update_...      5    323ms  0.73%  64.6ms   24.3MiB  0.74%  4.86MiB
+│        Update Cache 1       1   12.4ms  0.03%  12.4ms   4.36MiB  0.13%  4.36MiB
+│    Execution Step 3         1    2.83s  6.37%   2.83s    223MiB  6.77%   223MiB
+│      Execute UC             1    2.83s  6.37%   2.83s    223MiB  6.77%   223MiB
+│        Run UC               1    2.51s  5.65%   2.51s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.4ms  0.03%  11.4ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.43ms  0.01%  3.43ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.71ms  0.01%   541μs   3.01MiB  0.09%   617KiB
+│    Execution Step 14        1    2.71s  6.10%   2.71s    223MiB  6.77%   223MiB
+│      Execute UC             1    2.71s  6.10%   2.71s    223MiB  6.77%   223MiB
+│        Run UC               1    2.41s  5.44%   2.41s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   12.2ms  0.03%  12.2ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.42ms  0.01%  3.42ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.75ms  0.01%   550μs   3.01MiB  0.09%   617KiB
+│    Execution Step 10        1    2.57s  5.78%   2.57s    223MiB  6.77%   223MiB
+│      Execute UC             1    2.57s  5.78%   2.57s    223MiB  6.77%   223MiB
+│        Run UC               1    2.31s  5.21%   2.31s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   14.2ms  0.03%  14.2ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   4.53ms  0.01%  4.53ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   3.76ms  0.01%   752μs   3.01MiB  0.09%   617KiB
+│    Execution Step 7         1    2.56s  5.77%   2.56s    223MiB  6.77%   223MiB
+│      Execute UC             1    2.56s  5.77%   2.56s    223MiB  6.77%   223MiB
+│        Run UC               1    2.27s  5.12%   2.27s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   11.4ms  0.03%  11.4ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.52ms  0.01%  3.52ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.77ms  0.01%   554μs   3.01MiB  0.09%   617KiB
+│    Execution Step 6         1    2.39s  5.39%   2.39s    223MiB  6.77%   223MiB
+│      Execute UC             1    2.39s  5.39%   2.39s    223MiB  6.77%   223MiB
+│        Run UC               1    2.14s  4.82%   2.14s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   12.1ms  0.03%  12.1ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.43ms  0.01%  3.43ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.72ms  0.01%   544μs   3.01MiB  0.09%   617KiB
+│    Execution Step 4         1    2.33s  5.25%   2.33s    223MiB  6.77%   223MiB
+│      Execute UC             1    2.33s  5.25%   2.33s    223MiB  6.77%   223MiB
+│        Run UC               1    2.01s  4.53%   2.01s    100MiB  3.03%   100MiB
+│        Update Cache 1       1   14.0ms  0.03%  14.0ms   4.36MiB  0.13%  4.36MiB
+│        Update UC            1   3.33ms  0.01%  3.33ms   3.01MiB  0.09%  3.01MiB
+│          ts_update_...      5   2.62ms  0.01%   523μs   3.01MiB  0.09%   617KiB
+│  ──────────────────────────────────────────────────────────────────────────────
+└ @ PowerSimulations /Users/cbarrows/.julia/packages/PowerSimulations/E5zjV/src/core/simulation.jl:1008
